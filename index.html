@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galaxy Presentation - Toko Buku</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+<div id="webgl-container"></div>
+<div class="overlay"></div>
+
+<header>
+  <div class="brand"><span>✦</span> GALAXY PRESENTATION</div>
+  <div class="top-info">● STT CIPASUNG · INFORMATIKA 2026</div>
+  <button id="fullscreen">⛶</button>
+</header>
+
+<main id="presentation">
+
+<!-- SLIDE 1 -->
+<section class="slide active">
+  <div class="eyebrow">LAPORAN UTS PEMROGRAMAN WEB</div>
+  <div class="hero">
+    <div class="hero-text">
+      <p class="cyan">PRESENTASI PROYEK</p>
+      <h1>Perancangan Sistem Informasi <em>Toko Buku</em> Berbasis Web</h1>
+      <p class="description">Platform e-commerce toko buku interaktif dengan manajemen katalog terpusat, pengolahan pesanan otomatis, dan multi-hak akses.</p>
+      <div class="line"></div>
+      <div class="identity">
+        <div><small>DOSEN PENGAMPU</small><b>Nugraha Yudhasyah, M.T.</b></div>
+        <div><small>TIM PENYUSUN</small><b>Kelompok 5 (Lutfi, Jaka, Ade, Zaky, Iyan)</b></div>
+      </div>
+    </div>
+    <div class="planet-decoration"><div class="planet"></div></div>
+  </div>
+  <div class="footer"><span>STT CIPASUNG</span><span>01 / 11</span></div>
+</section>
+
+<!-- SLIDE 2 -->
+<section class="slide">
+  <div class="eyebrow">01 · LATAR BELAKANG</div>
+  <h2>Transformasi Digital <em>Penjualan Buku</em></h2>
+  <p class="description">Menjawab kebiasaan baru pembeli yang menginginkan kemudahan pencarian buku, transparansi stok, serta fleksibilitas pembayaran digital.</p>
+  <div class="grid two">
+    <article class="card">
+      <span class="tag">KONDISI SAAT INI</span>
+      <h3>Keterbatasan Toko Fisik</h3>
+      <ul>
+        <li><b>Pencatatan manual</b><br>Stok dan transaksi rentan selisih.</li>
+        <li><b>Akses terbatas</b><br>Pembeli harus datang langsung ke lokasi.</li>
+        <li><b>Informasi minim</b><br>Ketersediaan buku tidak transparan.</li>
+      </ul>
+    </article>
+    <article class="card highlight">
+      <span class="tag">SOLUSI YANG DITAWARKAN</span>
+      <h3>Solusi Web E-Commerce</h3>
+      <ul>
+        <li><b>Katalog terpusat</b><br>Akses stok real-time 24/7.</li>
+        <li><b>Pemesanan praktis</b><br>Filter pencarian dan checkout mudah.</li>
+        <li><b>Manajemen terstruktur</b><br>Dashboard admin terintegrasi.</li>
+      </ul>
+    </article>
+  </div>
+  <div class="footer"><span>GALAXY PRESENTATION</span><span>02 / 11</span></div>
+</section>
+
+<!-- SLIDE 3 -->
+<section class="slide">
+  <div class="eyebrow">02 · TUJUAN KUNCI</div>
+  <h2>Objective & <em>Key Results</em></h2>
+  <p class="description">Tiga sasaran utama perancangan sistem informasi toko buku berbasis web.</p>
+  <div class="grid three">
+    <article class="card objective">
+      <span class="number">01</span><span class="tag">OBJECTIVE</span>
+      <h3>Pengalaman Pelanggan</h3>
+      <p>Menyediakan sarana pencarian dan pemesanan buku online yang cepat, intuitif, serta hemat waktu.</p>
+      <div class="result"><small>KEY RESULT</small>Navigasi filter presisi & pemantauan status pesanan transparan.</div>
+    </article>
+    <article class="card objective highlight">
+      <span class="number">02</span><span class="tag">OBJECTIVE</span>
+      <h3>Efisiensi Operasional</h3>
+      <p>Membantu pengelola toko mengelola data buku, stok, pesanan, dan pelanggan secara terpusat.</p>
+      <div class="result"><small>KEY RESULT</small>Pemotongan stok otomatis & manajemen status sekali klik.</div>
+    </article>
+    <article class="card objective">
+      <span class="number">03</span><span class="tag">OBJECTIVE</span>
+      <h3>Presisi Finansial</h3>
+      <p>Kalkulasi biaya otomatis yang mencakup harga produk, variasi kurir, dan ongkos kirim.</p>
+      <div class="result"><small>KEY RESULT</small>Rincian total akurat sebelum konfirmasi pembayaran final.</div>
+    </article>
+  </div>
+  <div class="footer"><span>GALAXY PRESENTATION</span><span>03 / 11</span></div>
+</section>
+
+<!-- SLIDE 4 -->
+<section class="slide">
+  <div class="eyebrow">03 · TARGET AUDIENS</div>
+  <h2>User Persona <em>Utama</em></h2>
+  <p class="description">Gambaran calon pengguna dan kebutuhan utama sistem.</p>
+  <div class="grid two">
+    <article class="card persona">
+      <div class="avatar">SW</div>
+      <span class="tag">PENGGEMAR FIKSI</span>
+      <h3>Sari Wulandari (26 Tahun)</h3>
+      <p>Karyawan Swasta</p>
+      <div class="result"><small>MOTIVASI UTAMA</small>Mencari rilis buku terbaru, membaca sinopsis lengkap, dan pemesanan langsung tanpa antre.</div>
+      <div class="result"><small>KEBUTUHAN KUNCI</small>✓ Pencarian judul & penulis instan<br>✓ Pembayaran e-wallet / transfer</div>
+    </article>
+    <article class="card persona">
+      <div class="avatar purple">BS</div>
+      <span class="tag">MAHASISWA INFORMATIKA</span>
+      <h3>Budi Santoso (20 Tahun)</h3>
+      <p>Mahasiswa · Surabaya</p>
+      <div class="result"><small>MOTIVASI UTAMA</small>Mencari buku referensi kuliah murah, membandingkan harga, dan hemat ongkos kirim.</div>
+      <div class="result"><small>KEBUTUHAN KUNCI</small>✓ Filter harga terendah & kategori Teknologi<br>✓ Pilihan kurir ekonomis</div>
+    </article>
+  </div>
+  <div class="footer"><span>GALAXY PRESENTATION</span><span>04 / 11</span></div>
+</section>
+
+<!-- SLIDE 5 -->
+<section class="slide">
+  <div class="eyebrow">04 · ARSITEKTUR PERAN</div>
+  <h2>Use Case & <em>Hak Akses Pengguna</em></h2>
+  <p class="description">Pembagian akses berdasarkan peran pengguna agar fungsi sistem terstruktur dan terproteksi.</p>
+  <div class="grid three">
+    <article class="card">
+      <span class="number">◉</span><span class="tag">ROLE 01</span>
+      <h3>Pengunjung (Publik)</h3>
+      <ul>
+        <li>Jelajah beranda & katalog</li><li>Pencarian & filter buku</li>
+        <li>Melihat detail & sinopsis</li><li>Mengelola keranjang belanja</li><li>Registrasi akun baru</li>
+      </ul>
+    </article>
+    <article class="card">
+      <span class="number">◎</span><span class="tag">ROLE 02</span>
+      <h3>Pelanggan</h3>
+      <ul>
+        <li>Hak akses Pengunjung +</li><li>Proses checkout pesanan</li>
+        <li>Pemilihan kurir & payment</li><li>Konfirmasi pesanan unik</li><li>Tracking riwayat pesanan</li>
+      </ul>
+    </article>
+    <article class="card highlight">
+      <span class="number">⌘</span><span class="tag">ROLE 03</span>
+      <h3>Administrator</h3>
+      <ul>
+        <li>Monitoring dashboard statistik</li><li>CRUD data buku & sampul</li>
+        <li>CRUD kategori terproteksi</li><li>Update status pesanan</li><li>Kelola status akun user</li>
+      </ul>
+    </article>
+  </div>
+  <div class="footer"><span>GALAXY PRESENTATION</span><span>05 / 11</span></div>
+</section>
+
+<!-- SLIDE 6 -->
+<section class="slide">
+  <div class="eyebrow">05 · ALUR PROSES</div>
+  <h2>Workflow Transaksi <em>Pelanggan</em></h2>
+  <p class="description">Alur pemesanan dirancang berurutan agar pelanggan dapat menyelesaikan transaksi dengan mudah.</p>
+  <div class="workflow">
+    <div><b>01</b><h3>Pilih Buku</h3><p>Filter & pencarian katalog</p></div>
+    <div><b>02</b><h3>Keranjang</h3><p>Atur kuantitas barang</p></div>
+    <div><b>03</b><h3>Autentikasi</h3><p>Login / registrasi</p></div>
+    <div><b>04</b><h3>Checkout</h3><p>Kurir & pembayaran</p></div>
+    <div><b>05</b><h3>Tracking</h3><p>Pantau status pesanan</p></div>
+  </div>
+  <div class="notice"><b>✦ OTOMATISASI SISTEM</b><p>Pengurangan stok langsung saat pesanan dibuat & pembuatan ID transaksi unik.</p></div>
+  <div class="footer"><span>GALAXY PRESENTATION</span><span>06 / 11</span></div>
+</section>
+
+<!-- SLIDE 7 -->
+<section class="slide">
+  <div class="eyebrow">06 · RINCIAN FITUR</div>
+  <h2>Fitur Utama <em>Sistem</em></h2>
+  <p class="description">Komponen fungsional yang mendukung proses penjualan, operasional, dan integritas data.</p>
+  <div class="grid two">
+    <article class="card feature"><span class="number">⌕</span><span class="tag">DISCOVERY</span><h3>Pencarian & Filter</h3><p>Filter berdasar harga, urutan terbaru, kategori, dan opsi “Hanya yang Tersedia”.</p></article>
+    <article class="card feature"><span class="number">⇄</span><span class="tag">DELIVERY & PAYMENT</span><h3>Kalkulasi Kurir</h3><p>Kalkulasi otomatis biaya kirim (JNE, J&T, Pos) dan pilihan bayar (Transfer, COD, E-wallet).</p></article>
+    <article class="card feature"><span class="number">▥</span><span class="tag">ADMIN CONTROL</span><h3>Dashboard Ringkasan</h3><p>Statistik stok menipis (≤5), total pendapatan, dan transaksi yang perlu diproses.</p></article>
+    <article class="card feature"><span class="number">◇</span><span class="tag">DATA INTEGRITY SYSTEM</span><h3>Proteksi Data & Integritas Relasi</h3><p>Kategori atau buku yang sedang terikat dalam riwayat transaksi dikunci agar data historis tetap utuh.</p></article>
+  </div>
+  <div class="footer"><span>GALAXY PRESENTATION</span><span>07 / 11</span></div>
+</section>
+
+<!-- SLIDE 8 -->
+<section class="slide">
+  <div class="eyebrow">07 · PROTOTIPE INTERFACE</div>
+  <h2>Antarmuka Pelanggan <em>& Admin</em></h2>
+  <p class="description">Rancangan awal antarmuka memisahkan kebutuhan navigasi pelanggan dan pengelolaan administrator.</p>
+  <div class="grid two">
+    <article class="card">
+      <span class="tag">PELANGGAN · LOW-FIDELITY</span><h3>Header Menu & Beranda</h3>
+      <div class="mock">
+        <div class="mock-nav"><b>BOOKSTORE</b><span>Beranda　 Katalog　 Tentang</span></div>
+        <div class="mock-banner"><small>KOLEKSI PILIHAN</small><strong>Temukan Buku<br>Favoritmu</strong></div>
+        <div class="mock-books">▤　▤　▤　▤</div>
+      </div>
+      <p>Banner promo / carousel dan navigasi katalog.</p>
+    </article>
+    <article class="card">
+      <span class="tag">ADMIN · LOW-FIDELITY</span><h3>Sidebar Navigation</h3>
+      <div class="mock admin-mock">
+        <aside>BOOK ADMIN<br><br>▦ Dashboard<br>▤ Data Buku<br>▧ Kategori<br>▣ Pesanan<br>♙ Pengguna</aside>
+        <div class="admin-area"><b>Dashboard</b><div class="stats"><i></i><i></i><i></i></div><div class="chart"></div></div>
+      </div>
+      <p>Dashboard admin untuk pengelolaan sistem.</p>
+    </article>
+  </div>
+  <div class="footer"><span>GALAXY PRESENTATION</span><span>08 / 11</span></div>
+</section>
+
+<!-- SLIDE 9 -->
+<section class="slide">
+  <div class="eyebrow">08 · BRANDING & DESAIN</div>
+  <h2>Identitas Visual <em>& UI Components</em></h2>
+  <p class="description">Sistem visual menggabungkan konsistensi warna, tipografi, dan prinsip aksesibilitas.</p>
+  <div class="grid three">
+    <article class="card"><span class="tag">PALET WARNA UTAMA</span><h3>Color System</h3>
+      <div class="swatch"><i style="background:#2F5BEA"></i><span>Primary Blue<br><small>#2F5BEA</small></span></div>
+      <div class="swatch"><i style="background:#1B2230"></i><span>Dark Neutral<br><small>#1B2230</small></span></div>
+      <div class="swatch"><i style="background:#2F7D4F"></i><span>Success Green<br><small>#2F7D4F</small></span></div>
+    </article>
+    <article class="card"><span class="tag">TIPOGRAFI SYSTEM</span><h3>Type Hierarchy</h3>
+      <div class="type"><b>Patrick Hand / Grotesk</b><small>Judul Wireframe & Header Utama</small></div>
+      <div class="type"><b>IBM Plex Sans</b><small>Body Copy & Input Form</small></div>
+      <div class="type"><b>IBM Plex Mono</b><small>Kode Transaksi & Label Stok</small></div>
+    </article>
+    <article class="card"><span class="tag">PRINSIP AKSESIBILITAS</span><h3>Accessible by Design</h3>
+      <p><b>Kontras Tinggi</b><br>Memenuhi standar WCAG 2.1 AA.</p>
+      <p><b>Navigasi Keyboard</b><br>Focus state terlihat jelas.</p>
+      <p><b>Responsif</b><br>Penyesuaian grid otomatis pada layar HP.</p>
+    </article>
+  </div>
+  <div class="footer"><span>GALAXY PRESENTATION</span><span>09 / 11</span></div>
+</section>
+
+<!-- SLIDE 10 -->
+<section class="slide">
+  <div class="eyebrow">09 · KESIMPULAN</div>
+  <h2>Rangkuman & <em>Langkah Lanjutan</em></h2>
+  <p class="description">Rancangan sistem menjadi dasar pengembangan platform toko buku berbasis web.</p>
+  <div class="grid two">
+    <article class="card conclusion"><span class="number">✓</span><span class="tag">TAHAP 01</span><h3>Validasi Prototipe</h3><p>Rancangan sistem low-fidelity terbukti mencakup seluruh kebutuhan bisnis toko buku fisik serta mempermudah pelanggan menemukan dan membeli buku secara online.</p></article>
+    <article class="card conclusion highlight"><span class="number">↗</span><span class="tag">TAHAP 02</span><h3>Pengembangan Lanjutan</h3><p>Tahap berikutnya adalah pembuatan UI High-Fidelity serta implementasi backend menggunakan basis data relasional untuk mengolah stok dan transaksi secara real-time.</p></article>
+  </div>
+  <div class="closing">STT CIPASUNG — PROGRAM STUDI INFORMATIKA TASIKMALAYA 2026 · KELOMPOK 5</div>
+  <div class="footer"><span>GALAXY PRESENTATION</span><span>10 / 11</span></div>
+</section>
+
+<!-- SLIDE 11 -->
+<section class="slide final">
+  <div class="thanks-orbit">✦</div>
+  <div class="thanks-content">
+    <div class="eyebrow">SESI TANYA & JAWAB</div>
+    <h1>Terima <em>Kasih</em></h1>
+    <p>Perancangan Sistem Informasi Toko Buku Berbasis Web</p>
+    <div class="contact">✉ info@sttcipasung.ac.id　 ·　⌖ Tasikmalaya, Jawa Barat</div>
+    <div class="qa">Q & A SESSION</div>
+  </div>
+  <div class="footer"><span>STT CIPASUNG · INFORMATIKA 2026</span><span>11 / 11</span></div>
+</section>
+</main>
+
+<nav class="controls">
+  <button id="prev">←</button>
+  <div class="progress">
+    <div class="track"><div id="bar"></div></div>
+    <span><b id="number">01</b> / 11</span>
+  </div>
+  <button id="next" class="next">→</button>
+</nav>
+
+<div class="hint">GUNAKAN TOMBOL ← → UNTUK BERPINDAH · F UNTUK LAYAR PENUH</div>
+
+<script src="script.js"></script>
+</body>
+</html>
